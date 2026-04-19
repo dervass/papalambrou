@@ -1,0 +1,16 @@
+@import url(/templates/OnePageBold_Master/styles.css);
+
+#mainmenu-container, .L9 #mainSlideshow .slide-control, .L9 #heading h1,
+#moveToTop, #services-container, .L9 #gallery-section .gallery-control,
+.L9 .contactform .submit > input, .L9 #mainmenu.fixed,
+.L9 .contactform .submit > input:hover,
+.L9 #profile-section .toggler {
+    background-color: #ad834e;
+}
+
+.L9 #contact-section .contact-details > h4,
+.L9 #contact-section .contact-details a, 
+.L9 #contact-section .contact-details a:visited, 
+.L9 #contact-section .contact-details a:focus {
+    color: #ad834e;
+}

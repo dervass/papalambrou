@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-papalambrou-green: #4d5f52;
+  --color-papalambrou-card: #425447;
+  --color-papalambrou-text-light: #d1dac5;
+}
+
+body {
+  background-color: #ffffff;
+  color: #171717;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+.wood-rings-bg {
+  background-color: #4d5f52;
+  background-image: repeating-radial-gradient(
+    circle at -10% 50%,
+    rgba(0, 0, 0, 0.02) 0,
+    rgba(0, 0, 0, 0.02) 2px,
+    transparent 2px,
+    transparent 30px
+  ),
+  radial-gradient(circle at top left, #536658, #455649);
+}
+
+.bottom-logs-bg {
+  background-image: url('/woodss1.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bottom-logs-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(40, 50, 42, 0.85); /* dark green overlay */
+}

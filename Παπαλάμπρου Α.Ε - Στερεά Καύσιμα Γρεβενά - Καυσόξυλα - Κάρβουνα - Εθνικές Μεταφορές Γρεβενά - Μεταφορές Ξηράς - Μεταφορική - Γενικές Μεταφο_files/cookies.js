@@ -1,0 +1,1 @@
+function setCookies(e,o,i){var t=new Date;t.setDate(t.getDate()+i),document.cookie=e+"="+escape(o)+";path=/"+(null==i?"":";expires="+t.toGMTString())}$(function(){$("#cookies-agree").on("click",function(){setCookies("eucookielaw","on",30),$("#cookie-notice").remove()})});
