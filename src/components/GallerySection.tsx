@@ -3,11 +3,11 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
+import { Autoplay, EffectFade, Navigation } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/effect-fade';
-import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const galleryImages = ['/woodss1.jpg', '/woodss2.jpg', '/woodss3.jpg'];
 
@@ -28,13 +28,13 @@ export default function GallerySection() {
           </h2>
           <div className="w-full rounded-xl overflow-hidden border border-white/20 relative aspect-[16/7] md:aspect-[21/9]">
             <Swiper
-              modules={[Autoplay, EffectFade, Pagination]}
+              modules={[Autoplay, EffectFade, Navigation]}
               effect="fade"
               autoplay={{ delay: 4000, disableOnInteraction: false }}
-              pagination={{ clickable: true }}
+              navigation={true}
               loop
               onSlideChange={(swiper) => setActiveImage(galleryImages[swiper.realIndex])}
-              className="w-full h-full"
+              className="w-full h-full [--swiper-navigation-color:rgba(255,255,255,0.3)] hover:[--swiper-navigation-color:rgba(255,255,255,0.8)] transition-all duration-300"
             >
               {galleryImages.map((src, idx) => (
                 <SwiperSlide key={src}>
