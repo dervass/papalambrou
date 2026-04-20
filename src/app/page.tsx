@@ -29,7 +29,7 @@ export default function Home() {
             </div>
             <div className="flex items-center space-x-2">
               <svg className="w-5 h-5 text-[#508964]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-              <span>sales@papalamprouae.gr</span>
+              <span>ioannispapalamprou@yahoo.gr</span>
             </div>
           </div>
         </header>
@@ -67,7 +67,7 @@ export default function Home() {
                 </div>
                 <div className="border-t border-white/20 pt-4">
                   <p className="text-xs font-semibold text-[#a5b6aa] mb-1 tracking-wider uppercase">EMAIL</p>
-                  <p className="text-xl font-medium">sales@papalamprouae.gr</p>
+                  <p className="text-xl font-medium">ioannispapalamprou@yahoo.gr</p>
                 </div>
                 <div className="border-t border-white/20 pt-4">
                   <a href="https://www.instagram.com/papalamprou_ioannis_ae/" target="_blank" rel="noopener noreferrer" className="text-xl font-medium uppercase tracking-wider hover:text-[#a5b6aa] transition-all block underline underline-offset-4 decoration-white/40 hover:decoration-[#a5b6aa]">
@@ -89,7 +89,8 @@ export default function Home() {
             <div className="bg-[#f3dfc1] rounded-[2.5rem] p-8 md:p-12 text-[#28322c] shadow-xl relative overflow-hidden h-full flex flex-col justify-center border border-[#e5d0b3]">
               <div className="space-y-6 text-lg md:text-xl font-bold leading-relaxed">
                 <p>
-                  Η ΠΑΠΑΛΑΜΠΡΟΥ Α.Ε. (Γρεβενά) είναι μια οικογενειακή επιχείρηση Παναγιώτη Παπαλάμπρου, επιτυχημένη στο εμπόριο στερεών καυσίμων και μεταφορών.
+                  Η Εταιρεία μας
+                  Η ΠΑΠΑΛΑΜΠΡΟΥ Α.Ε. είναι μια αμιγώς οικογενειακή επιχείρηση με έδρα τα Γρεβενά, η οποία ξεχωρίζει για την ποιότητα και την αξιοπιστία της από το 1995. Με επικεφαλής τον Ιωάννη Παπαλάμπρου και τον γιο του, Παναγιώτη, συνδυάζουμε την πολυετή εμπειρία με τη σύγχρονη εξυπηρέτηση. Εξειδικευόμαστε στο εμπόριο κορυφαίων στερεών καυσίμων και στις ασφαλείς μεταφορές σε όλη την Ελλάδα, χτίζοντας καθημερινά σχέσεις εμπιστοσύνης με τους πελάτες μας.
                 </p>
                 <p>
                   Σε εμάς θα βρείτε ποιοτικά καυσόξυλα και κάρβουνα, φυλασσόμενα σε στεγασμένο χώρο.
