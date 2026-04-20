@@ -9,7 +9,7 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 
-const galleryImages = ['/woodss1.jpg', '/woodss2.jpg', '/woodss3.jpg'];
+const galleryImages = ['/woodss1.jpg', '/woodss2.jpg', '/woodss3_v2.jpg'];
 
 export default function GallerySection() {
   const [activeImage, setActiveImage] = useState(galleryImages[0]);
