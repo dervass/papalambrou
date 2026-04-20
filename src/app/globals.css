@@ -25,9 +25,11 @@ body {
   background-position: center;
   position: relative;
 }
+
 .bottom-logs-bg::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(40, 50, 42, 0.85); /* dark green overlay */
+  background: rgba(40, 50, 42, 0.85);
+  /* dark green overlay */
 }
