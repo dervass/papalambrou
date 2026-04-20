@@ -85,8 +85,58 @@ export default function Home() {
         </div>
 
         <div className="w-full md:w-1/2 flex justify-start mt-12 md:mt-0">
-          <div className="w-full max-w-[600px] px-4 md:pl-8 md:pr-4 flex flex-col items-center justify-center">
-            <div className="w-full bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100 p-2">
+          <div className="w-full max-w-[600px] px-4 md:pl-8 md:pr-4 flex flex-col justify-center">
+            <div className="bg-[#f3dfc1] rounded-[2.5rem] p-8 md:p-12 text-[#28322c] shadow-xl relative overflow-hidden h-full flex flex-col justify-center border border-[#e5d0b3]">
+              <div className="space-y-6 text-lg md:text-xl font-bold leading-relaxed">
+                <p>
+                  Η ΠΑΠΑΛΑΜΠΡΟΥ Α.Ε. (Γρεβενά) είναι μια οικογενειακή επιχείρηση Παναγιώτη Παπαλάμπρου, επιτυχημένη στο εμπόριο στερεών καυσίμων και μεταφορών.
+                </p>
+                <p>
+                  Σε εμάς θα βρείτε ποιοτικά καυσόξυλα και κάρβουνα, φυλασσόμενα σε στεγασμένο χώρο.
+                </p>
+                <p>
+                  Εξειδικευμένο προσωπικό εξασφαλίζει ασφαλείς μεταφορές σε όλη την Ελλάδα.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[#f9faf9] w-full py-20 border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 flex flex-col justify-start">
+            <h2 className="text-2xl font-black mb-8 text-gray-900 border-b border-gray-100 pb-4 w-full text-center uppercase tracking-tight">Προϊόντα</h2>
+            <ul className="text-gray-700 leading-relaxed font-bold text-lg space-y-4 text-left">
+              <li className="flex items-center gap-2"><span className="text-[#508964]">•</span> Καυσόξυλα</li>
+              <li className="flex items-center gap-2"><span className="text-[#508964]">•</span> Κάρβουνα</li>
+              <li className="flex items-center gap-2"><span className="text-[#508964]">•</span> Ξύλα για σόμπα</li>
+              <li className="flex items-center gap-2"><span className="text-[#508964]">•</span> Ξύλα για ξυλολέβητα</li>
+              <li className="flex items-center gap-2"><span className="text-[#508964]">•</span> Στερεά καύσιμα</li>
+              <li className="flex items-center gap-2"><span className="text-[#508964]">•</span> Ξύλα για τζάκι</li>
+            </ul>
+          </div>
+
+          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 flex flex-col justify-start">
+            <h2 className="text-2xl font-black mb-8 text-gray-900 border-b border-gray-100 pb-4 w-full text-center uppercase tracking-tight">Υπηρεσίες</h2>
+            <ul className="text-gray-700 leading-relaxed font-bold text-lg space-y-4 text-left">
+              <li className="flex items-start gap-2">
+                <span className="text-[#508964] mt-1.5">•</span> 
+                <span>Εθνικές Μεταφορές: Μεταφορές σε όλη την Ελλάδα με ιδιόκτητα φορτηγά</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#508964] mt-1.5">•</span> 
+                <span>Μεταφορές Ξηράς</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#508964] mt-1.5">•</span> 
+                <span>Εξειδικευμένο Προσωπικό</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <div className="w-full bg-white rounded-3xl shadow-md overflow-hidden border border-gray-100 p-2 mb-6">
               <div className="w-full aspect-[4/3] bg-gray-100 relative rounded-2xl overflow-hidden">
                 <iframe
                   src="https://maps.google.com/maps?q=40.0295642,21.3396969&z=15&output=embed"
@@ -99,13 +149,13 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="mt-10 text-center space-y-4">
-              <h3 className="font-bold text-xl uppercase tracking-widest text-white drop-shadow-md">ΔΕΙΤΕ ΠΟΥ ΕΔΡΕΥΟΥΜΕ</h3>
+            <div className="text-center space-y-3">
+              <h3 className="font-black text-sm uppercase tracking-widest text-gray-900">ΔΕΙΤΕ ΠΟΥ ΕΔΡΕΥΟΥΜΕ</h3>
               <a
                 href="https://maps.app.goo.gl/f8gaPDM2VD69Pmj1A"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-[#eef2ef] px-8 py-3 rounded-md font-bold text-gray-800 shadow-sm border border-gray-200 hover:bg-[#e2e8e4] transition-colors uppercase tracking-wider text-sm"
+                className="inline-block bg-white px-6 py-2 rounded-md font-black text-gray-900 shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors uppercase tracking-widest text-[10px]"
               >
                 ΕΠΙΣΚΕΦΘΕΙΤΕ ΤΟΝ ΧΩΡΟ ΜΑΣ!
               </a>
@@ -114,36 +164,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-[#f9faf9] w-full py-16">
-        <div className="max-w-5xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="bg-[#fcfbf7] rounded-3xl p-10 md:p-14 shadow-md border border-gray-100 flex flex-col justify-start">
-            <h2 className="text-3xl font-bold mb-8 text-gray-900 border-b-2 border-[#508964]/20 pb-4 w-full text-center">Προϊόντα</h2>
-            <ul className="text-gray-800 leading-relaxed font-medium text-xl space-y-4 list-disc list-outside ml-6 text-left">
-              <li>Καυσόξυλα</li>
-              <li>Κάρβουνα</li>
-              <li>Ξύλα για σόμπα</li>
-              <li>Ξύλα για ξυλολέβητα</li>
-              <li>Στερεά καύσιμα</li>
-              <li>Ξύλα για τζάκι</li>
-            </ul>
-          </div>
-
-          <div className="bg-[#fcfbf7] rounded-3xl p-10 md:p-14 shadow-md border border-gray-100 flex flex-col justify-start">
-            <h2 className="text-3xl font-bold mb-8 text-gray-900 border-b-2 border-[#508964]/20 pb-4 w-full text-center">Υπηρεσίες</h2>
-            <ul className="text-gray-800 leading-relaxed font-medium text-xl space-y-4 list-disc list-outside ml-6 text-left">
-              <li>Εθνικές Μεταφορές: Μεταφορές σε όλη την Ελλάδα με ιδιόκτητα φορτηγά</li>
-              <li>Μεταφορές Ξηράς</li>
-              <li>Εξειδικευμένο Προσωπικό</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
       <GallerySection />
 
       <footer className="bg-[#28322c] text-[#8a9a8f] text-sm py-8">
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>© 2026 PAPALAMBROU A.E. | Με επιφύλαξη παντός δικαιώματος.</p>
+          <p>© 2024 PAPALAMBROU A.E. | Με επιφύλαξη παντός δικαιώματος.</p>
           <div className="flex space-x-6">
             <a href="#top" className="hover:text-white transition-colors">Πίσω στην Αρχική</a>
             <a href="#contact" className="hover:text-white transition-colors">Επικοινωνία</a>

@@ -13,15 +13,10 @@ body {
 }
 
 .wood-rings-bg {
-  background-color: #4d5f52;
-  background-image: repeating-radial-gradient(
-    circle at -10% 50%,
-    rgba(0, 0, 0, 0.02) 0,
-    rgba(0, 0, 0, 0.02) 2px,
-    transparent 2px,
-    transparent 30px
-  ),
-  radial-gradient(circle at top left, #536658, #455649);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
 }
 
 .bottom-logs-bg {
