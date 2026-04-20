@@ -38,7 +38,7 @@ export default function RootLayout({
               name: "Παπαλάμπρου Ιωάννης Α.Ε.",
               image: "https://papalamprouae.gr/transparent-logo.png",
               telephone: "+302462082362",
-              email: "sales@papalamprouae.gr",
+              email: "ioannispapalamprou@yahoo.gr",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "3ο χλμ Γρεβενών - Ιωαννίνων",
