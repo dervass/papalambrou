@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade, Navigation } from 'swiper/modules';
@@ -43,10 +43,10 @@ export default function GallerySection() {
   const [currentAlbum, setCurrentAlbum] = useState<AlbumKey>('xila');
   const [activeImage, setActiveImage] = useState(albums.xila[0]);
 
-  // Update background when album changes
-  useEffect(() => {
-    setActiveImage(albums[currentAlbum][0]);
-  }, [currentAlbum]);
+  const handleAlbumChange = (albumId: AlbumKey) => {
+    setCurrentAlbum(albumId);
+    setActiveImage(albums[albumId][0]);
+  };
 
   return (
     <div
@@ -71,7 +71,7 @@ export default function GallerySection() {
             ].map((btn) => (
               <button
                 key={btn.id}
-                onClick={() => setCurrentAlbum(btn.id as AlbumKey)}
+                onClick={() => handleAlbumChange(btn.id as AlbumKey)}
                 className={`px-10 py-4 rounded-full font-black tracking-[0.2em] text-[10px] md:text-xs uppercase transition-all duration-500 border-2 ${
                   currentAlbum === btn.id
                     ? 'bg-[#508964] border-[#508964] text-white shadow-[0_0_30px_rgba(80,137,100,0.5)] scale-110 z-20'
