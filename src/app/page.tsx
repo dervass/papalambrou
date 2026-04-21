@@ -25,7 +25,11 @@ export default function Home() {
           <div className="flex flex-col items-center md:items-end space-y-1">
             <div className="flex items-center space-x-2">
               <svg className="w-5 h-5 text-[#508964]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-              <span className="font-bold tracking-wide">+30 6932296045</span>
+              <span className="font-bold tracking-wide">6932296045</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <svg className="w-5 h-5 text-[#508964]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+              <span className="font-bold tracking-wide">24620 82362</span>
             </div>
             <div className="flex items-center space-x-2">
               <svg className="w-5 h-5 text-[#508964]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
@@ -43,7 +47,8 @@ export default function Home() {
             </h2>
 
             <p className="mb-8 text-sm font-bold tracking-widest uppercase text-white/90 leading-relaxed drop-shadow-md">
-              ΚΑΥΣΟΞΥΛΑ - ΚΑΡΒΟΥΝΑ - ΣΤΕΡΕΑ ΚΑΥΣΙΜΑ
+              ΚΑΥΣΟΞΥΛΑ - ΞΥΛΟΚΑΡΒΟΥΝΑ - ΣΤΕΡΕΑ ΚΑΥΣΙΜΑ
+              
             </p>
 
             <div
@@ -93,7 +98,7 @@ export default function Home() {
                   Η ΠΑΠΑΛΑΜΠΡΟΥ Α.Ε. είναι μια αμιγώς οικογενειακή επιχείρηση με έδρα τα Γρεβενά, η οποία ξεχωρίζει για την ποιότητα και την αξιοπιστία της από το 1995. Με επικεφαλής τον Ιωάννη Παπαλάμπρου και τον γιο του, Παναγιώτη, συνδυάζουμε την πολυετή εμπειρία με τη σύγχρονη εξυπηρέτηση. Εξειδικευόμαστε στο εμπόριο κορυφαίων στερεών καυσίμων και στις ασφαλείς μεταφορές σε όλη την Ελλάδα, χτίζοντας καθημερινά σχέσεις εμπιστοσύνης με τους πελάτες μας.
                 </p>
                 <p>
-                  Σε εμάς θα βρείτε ποιοτικά καυσόξυλα και κάρβουνα, φυλασσόμενα σε στεγασμένο χώρο.
+                  Σε εμάς θα βρείτε ποιοτικά καυσόξυλα και ξυλοκάρβουνα, φυλασσόμενα σε στεγασμένο χώρο.
                 </p>
                 <p>
                   Εξειδικευμένο προσωπικό εξασφαλίζει ασφαλείς μεταφορές σε όλη την Ελλάδα.
@@ -110,7 +115,7 @@ export default function Home() {
             <h2 className="text-2xl font-black mb-8 text-gray-900 border-b border-gray-100 pb-4 w-full text-center uppercase tracking-tight">Προϊόντα</h2>
             <ul className="text-gray-700 leading-relaxed font-bold text-lg space-y-4 text-left">
               <li className="flex items-center gap-2"><span className="text-[#508964]">•</span> Καυσόξυλα</li>
-              <li className="flex items-center gap-2"><span className="text-[#508964]">•</span> Κάρβουνα</li>
+              <li className="flex items-center gap-2"><span className="text-[#508964]">•</span> Ξυλοκάρβουνα</li>
               <li className="flex items-center gap-2"><span className="text-[#508964]">•</span> Ξύλα για σόμπα</li>
               <li className="flex items-center gap-2"><span className="text-[#508964]">•</span> Ξύλα για ξυλολέβητα</li>
               <li className="flex items-center gap-2"><span className="text-[#508964]">•</span> Στερεά καύσιμα</li>
