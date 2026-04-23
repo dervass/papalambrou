@@ -37,6 +37,12 @@ const albums = {
   ]
 };
 
+const btnLabels: Record<string, string> = {
+  xila: 'ΞΥΛΑ',
+  xilokarbouna: 'ΞΥΛΟΚΑΡΒΟΥΝΑ',
+  stolos: 'ΣΤΟΛΟΣ'
+};
+
 type AlbumKey = keyof typeof albums;
 
 export default function GallerySection() {
@@ -49,12 +55,21 @@ export default function GallerySection() {
   };
 
   return (
-    <div
-      className="w-full py-24 relative transition-all duration-1000 bg-cover bg-center"
-      style={{ backgroundImage: `url(${activeImage})` }}
-    >
+    <div className="w-full py-24 relative overflow-hidden">
+      {/* Optimized background image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={activeImage}
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover"
+          aria-hidden="true"
+        />
+      </div>
+      
       {/* Dark overlay with blur to make the main gallery pop */}
-      <div className="absolute inset-0 bg-[rgba(20,26,22,0.85)] backdrop-blur-[4px] transition-all duration-1000" />
+      <div className="absolute inset-0 bg-[rgba(20,26,22,0.85)] backdrop-blur-[4px] transition-all duration-1000 z-1" />
 
       <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
         <div className="bg-[#121a15]/90 backdrop-blur-sm rounded-[2.5rem] p-6 md:p-12 shadow-2xl border border-white/10 text-center">
@@ -72,6 +87,7 @@ export default function GallerySection() {
               <button
                 key={btn.id}
                 onClick={() => handleAlbumChange(btn.id as AlbumKey)}
+                aria-label={`Προβολή άλμπουμ ${btn.label}`}
                 className={`px-10 py-4 rounded-full font-black tracking-[0.2em] text-[10px] md:text-xs uppercase transition-all duration-500 border-2 ${
                   currentAlbum === btn.id
                     ? 'bg-[#508964] border-[#508964] text-white shadow-[0_0_30px_rgba(80,137,100,0.5)] scale-110 z-20'
@@ -103,10 +119,10 @@ export default function GallerySection() {
                   <div className="relative w-full h-full">
                     <Image
                       src={src}
-                      alt={`${currentAlbum} image ${idx + 1}`}
+                      alt={`Εικόνα ${idx + 1} από το άλμπουμ ${btnLabels[currentAlbum]}`}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
                       className="object-cover transition-transform duration-[4500ms] hover:scale-110"
-                      priority={idx === 0}
                     />
                   </div>
                 </SwiperSlide>
