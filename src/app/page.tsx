@@ -12,12 +12,13 @@ export default function Home() {
           <div className="flex items-center space-x-6 mb-4 md:mb-0">
             <div className="w-24 h-24 rounded-full shadow-md border border-gray-200 bg-white flex items-center justify-center overflow-hidden relative shrink-0">
               <Image
-                src="/transparent-logo.png"
+                src="/logo-finale-latest.png"
                 alt="Papalambrou Logo"
                 fill
-                sizes="96px"
+                sizes="256px"
                 className="object-contain scale-[1.6] origin-center translate-y-[1px] drop-shadow-sm"
                 priority
+                quality={100}
               />
             </div>
             <h1 className="text-2xl md:text-3xl font-black tracking-tight text-gray-900 uppercase">
