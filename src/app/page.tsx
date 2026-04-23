@@ -303,17 +303,14 @@ export default function Home() {
       <footer className="bg-[#1a1a1a] text-white/40 py-6">
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-[10px] md:text-xs uppercase tracking-widest font-bold">
-            © 2024 ΠΑΠΑΛΑΜΠΡΟΥ ΙΩΑΝΝΗΣ Α.Ε. | Με επιφύλαξη παντός δικαιώματος.
+            © 2026 ΠΑΠΑΛΑΜΠΡΟΥ ΙΩΑΝΝΗΣ Α.Ε. | Με επιφύλαξη παντός δικαιώματος.
           </div>
           <div className="flex items-center gap-8">
-            <a href="#" className="text-[10px] md:text-xs uppercase tracking-widest font-bold hover:text-white transition-colors">Πολιτική Απορρήτου</a>
-            <a href="#contact" className="text-[10px] md:text-xs uppercase tracking-widest font-bold hover:text-white transition-colors">Επικοινωνία</a>
             <button 
-              aria-label="Επιστροφή στην κορυφή"
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition-all group"
+              className="text-[10px] md:text-xs uppercase tracking-widest font-bold hover:text-white transition-colors"
             >
-              <svg className="w-5 h-5 text-white/40 group-hover:text-white transition-colors" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" /></svg>
+              Επικοινωνία
             </button>
           </div>
         </div>
