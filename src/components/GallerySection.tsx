@@ -55,7 +55,7 @@ export default function GallerySection() {
   };
 
   return (
-    <div className="w-full py-24 relative overflow-hidden">
+    <div className="w-full py-12 md:py-24 relative overflow-hidden">
       {/* Optimized background image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -72,13 +72,13 @@ export default function GallerySection() {
       <div className="absolute inset-0 bg-[rgba(20,26,22,0.85)] backdrop-blur-[4px] transition-all duration-1000 z-1" />
 
       <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="bg-[#121a15]/90 backdrop-blur-sm rounded-[2.5rem] p-6 md:p-12 shadow-2xl border border-white/10 text-center">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-10 tracking-widest uppercase">
+        <div className="bg-[#121a15]/90 backdrop-blur-sm rounded-[1.5rem] md:rounded-[2.5rem] p-5 md:p-12 shadow-2xl border border-white/10 text-center">
+          <h2 className="text-2xl md:text-4xl font-black text-white mb-8 md:mb-10 tracking-widest uppercase">
             ΦΩΤΟΓΡΑΦΙΕΣ
           </h2>
 
           {/* Album Selection Buttons */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-8 md:mb-12">
             {[
               { id: 'xila', label: 'ΞΥΛΑ' },
               { id: 'xilokarbouna', label: 'ΞΥΛΟΚΑΡΒΟΥΝΑ' },
@@ -88,9 +88,9 @@ export default function GallerySection() {
                 key={btn.id}
                 onClick={() => handleAlbumChange(btn.id as AlbumKey)}
                 aria-label={`Προβολή άλμπουμ ${btn.label}`}
-                className={`px-10 py-4 rounded-full font-black tracking-[0.2em] text-[10px] md:text-xs uppercase transition-all duration-500 border-2 ${
+                className={`px-6 md:px-10 py-3 md:py-4 rounded-full font-black tracking-[0.2em] text-[10px] md:text-xs uppercase transition-all duration-500 border-2 ${
                   currentAlbum === btn.id
-                    ? 'bg-[#508964] border-[#508964] text-white shadow-[0_0_30px_rgba(80,137,100,0.5)] scale-110 z-20'
+                    ? 'bg-[#508964] border-[#508964] text-white shadow-[0_0_30px_rgba(80,137,100,0.5)] scale-105 md:scale-110 z-20'
                     : 'bg-white/5 border-white/10 text-white/50 hover:bg-white/10 hover:border-white/30 hover:text-white hover:scale-105'
                 }`}
               >
